@@ -6,3 +6,7 @@ body {
 .webview {
   height: 100%;
 }
+
+.selected {
+  background: #F5F5F5;
+}

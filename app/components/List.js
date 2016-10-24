@@ -1,21 +1,10 @@
-import React, { Component } from 'react';
-import ListItem from './ListItem';
+import styled from 'styled-components';
 
-class List extends Component {
-  static propTypes = {
-    repos: React.PropTypes.array,
-    clickCallback: React.PropTypes.func
-  }
-
-  render() {
-    return (
-      <div className="List">
-        {this.props.repos.map((repo) => {
-          return (<ListItem onClick={() => this.props.clickCallback(repo)} key={repo.id}>{repo.name}</ListItem>)
-        })}
-      </div>
-    );
-  }
-}
+const List = styled.div`
+  border-right: 1px #ccc solid;
+  height: 100%;
+  overflow-y: scroll;
+  font-size: 0.9em;
+`;
 
 export default List;
