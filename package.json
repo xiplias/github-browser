@@ -110,15 +110,19 @@
     "css-modules-require-hook": "^4.0.5",
     "electron-debug": "^1.0.1",
     "font-awesome": "^4.6.3",
+    "github-api": "^2.3.0",
     "postcss": "^5.2.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-electron-web-view": "^2.0.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.6",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
-    "source-map-support": "^0.4.3"
+    "reflexbox": "^2.2.2",
+    "source-map-support": "^0.4.3",
+    "styled-components": "^1.0.8"
   },
   "devEngines": {
     "node": "4.x || 5.x || 6.x",
