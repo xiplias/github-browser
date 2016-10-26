@@ -11,7 +11,7 @@ import Header from '../components/Header';
 
 const localStorage = global.window.localStorage;
 
-class App extends Component {
+class Browser extends Component {
   constructor() {
     super();
 
@@ -21,7 +21,7 @@ class App extends Component {
       currentPullRequests: [],
       currentRepo: false,
       currentIssue: false,
-      currentUrl: false,
+      currentUrl: 'https://github.com',
       token: localStorage.token
     };
 
@@ -159,8 +159,8 @@ class App extends Component {
             </List>
           </Box>
         )}
-        <Box col={8}>
-          {this.state.currentRepo && (
+        <Box auto>
+          {this.state.currentUrl && (
             <div style={{ height: '100%' }}>
               <Header>{this.state.currentUrl}</Header>
               <WebView src={this.state.currentUrl} className="webview" style={{ height: '100%' }} />
@@ -172,4 +172,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Browser;
