@@ -4,7 +4,7 @@ import { Input, Button, Panel, PanelHeader } from 'rebass';
 
 const localStorage = global.window.localStorage;
 
-export class Login extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class Login extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor() {
     super();
 
